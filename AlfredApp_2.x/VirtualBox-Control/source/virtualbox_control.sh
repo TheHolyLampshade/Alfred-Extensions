@@ -217,6 +217,13 @@ else
                         echo "<item uid=\"$UUID\" arg=\"startvm $UUID\" autocomplete=\"$NAME\">"
                         echo "<title>$NAME</title>"
                         echo "<subtitle>Start Virtual Machine</subtitle>"
+                        echo "<icon>$ICON.png</icon>"
+                        echo "</item>"
+
+                        # VM is not running make a start link for headless
+                        echo "<item uid=\"$UUID\" arg=\"startvm $UUID --type headless\" autocomplete=\"$NAME\">"
+                        echo "<title>$NAME (Headless)</title>"
+                        echo "<subtitle>Start headless Virtual Machine</subtitle>"
 
                     elif [[ $(echo $LINE | grep -c "aborted") -gt 0 ]]
                         then

@@ -72,7 +72,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Control your VirualBox VMs from Alfred.
+	<string>Control your VirtualBox VMs from Alfred.
 
 Surported commands are:
 	- Start
